@@ -218,6 +218,43 @@ body{
     text-decoration:none;
 }
 
+.footer-links{
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    gap:30px;
+    flex-wrap:wrap;
+    margin-top:15px;
+}
+
+.footer-links a{
+    color:white;
+    text-decoration:none;
+    font-weight:600;
+}
+
+.footer-links a:hover{
+    text-decoration:underline;
+}
+
+/* MOBILE */
+
+@media(max-width:900px){
+
+    .about-grid{
+        grid-template-columns:1fr;
+    }
+
+}
+/* MOBILE */
+
+@media(max-width:900px){
+
+    .about-grid{
+        grid-template-columns:1fr;
+    }
+
+}
 /* MOBILE */
 
 @media(max-width:900px){
@@ -384,8 +421,6 @@ body{
 
 </section>
 
-<!-- FOOTER -->
-
 <footer class="footer">
 
     <h3>Stephen MacIver</h3>
@@ -394,11 +429,21 @@ body{
 
     <br>
 
-    <p>
-        📞 <a href="tel:9126616162">912-661-6162</a>
-        &nbsp; | &nbsp;
-        📧 <a href="mailto:smaciver@jclewis.com">smaciver@jclewis.com</a>
-    </p>
+    <div class="footer-links">
+
+        <a href="sms:9126616162">
+            💬 Text Me
+        </a>
+
+        <a href="tel:9126616162">
+            📞 912-661-6162
+        </a>
+
+        <a href="mailto:smaciver@jclewis.com">
+            📧 Email Me
+        </a>
+
+    </div>
 
 </footer>
 
