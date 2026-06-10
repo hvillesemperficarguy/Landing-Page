@@ -1,0 +1,411 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Meet The SemperFiCarGuy</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;800&display=swap" rel="stylesheet">
+
+<style>
+
+:root{
+    --ford-blue:#003478;
+    --ford-red:#d71920;
+    --light:#f5f7fa;
+    --dark:#1e293b;
+    --green:#16a34a;
+}
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+    font-family:'Inter',sans-serif;
+    line-height:1.6;
+    color:#333;
+    background:white;
+}
+
+/* HERO */
+
+.hero{
+    min-height:100vh;
+    background:
+        linear-gradient(rgba(0,0,0,.65),rgba(0,0,0,.65)),
+        url("hero.jpg");
+    background-size:cover;
+    background-position:center;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    text-align:center;
+    padding:40px 20px;
+}
+
+.hero-content{
+    max-width:900px;
+    color:white;
+}
+
+.badge{
+    display:inline-block;
+    background:rgba(255,255,255,.15);
+    backdrop-filter:blur(10px);
+    padding:10px 18px;
+    border-radius:999px;
+    font-weight:600;
+    margin-bottom:25px;
+}
+
+.hero h1{
+    font-size:clamp(3rem,8vw,5.5rem);
+    line-height:1;
+    margin-bottom:20px;
+}
+
+.hero h1 span{
+    color:var(--ford-red);
+}
+
+.hero p{
+    font-size:1.25rem;
+    max-width:700px;
+    margin:auto;
+    margin-bottom:40px;
+}
+
+/* BUTTONS */
+
+.button-grid{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+    gap:15px;
+    margin-top:30px;
+}
+
+.btn{
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    text-decoration:none;
+    font-weight:700;
+    padding:18px;
+    border-radius:12px;
+    transition:.3s;
+}
+
+.btn:hover{
+    transform:translateY(-3px);
+}
+
+.btn-red{
+    background:var(--ford-red);
+    color:white;
+}
+
+.btn-blue{
+    background:var(--ford-blue);
+    color:white;
+}
+
+.btn-green{
+    background:var(--green);
+    color:white;
+}
+
+/* SECTIONS */
+
+.section{
+    padding:80px 20px;
+}
+
+.container{
+    width:min(1100px,90%);
+    margin:auto;
+}
+
+.section-title{
+    text-align:center;
+    font-size:2.5rem;
+    margin-bottom:50px;
+    color:var(--ford-blue);
+}
+
+/* ABOUT */
+
+.about{
+    background:var(--light);
+}
+
+.about-grid{
+    display:grid;
+    grid-template-columns:350px 1fr;
+    gap:50px;
+    align-items:center;
+}
+
+.about-grid img{
+    width:100%;
+    border-radius:20px;
+    box-shadow:0 10px 30px rgba(0,0,0,.15);
+}
+
+.about-text h3{
+    font-size:2rem;
+    color:var(--ford-blue);
+    margin-bottom:20px;
+}
+
+.about-text p{
+    margin-bottom:18px;
+}
+
+.values{
+    list-style:none;
+    margin-top:25px;
+}
+
+.values li{
+    margin-bottom:12px;
+    font-weight:600;
+    color:var(--ford-blue);
+}
+
+/* LINKS */
+
+.links{
+    text-align:center;
+}
+
+.links .button-grid{
+    max-width:700px;
+    margin:auto;
+}
+
+/* REFERRAL */
+
+.referral{
+    background:var(--ford-blue);
+    color:white;
+    text-align:center;
+}
+
+.referral h2{
+    font-size:2.5rem;
+    margin-bottom:15px;
+}
+
+.referral p{
+    margin-bottom:30px;
+    font-size:1.1rem;
+}
+
+/* FOOTER */
+
+.footer{
+    background:#111827;
+    color:white;
+    text-align:center;
+    padding:30px 20px;
+}
+
+.footer a{
+    color:white;
+    text-decoration:none;
+}
+
+/* MOBILE */
+
+@media(max-width:900px){
+
+    .about-grid{
+        grid-template-columns:1fr;
+    }
+
+    .about-grid img{
+        max-width:350px;
+        margin:auto;
+    }
+
+}
+
+</style>
+</head>
+<body>
+
+<!-- HERO -->
+
+<section class="hero">
+
+    <div class="hero-content">
+
+        <div class="badge">
+            US Marine Veteran • Ford Sales Consultant
+        </div>
+
+        <h1>
+            Meet The <span>SemperFiCarGuy</span>
+        </h1>
+
+        <p>
+            Serving Hinesville, Fort Stewart, and the surrounding military
+            community with honest information, transparent pricing,
+            and Devil Dog Deals.
+        </p>
+
+        <div class="button-grid">
+
+            <a href="mailto:smaciver@jclewis.com" class="btn btn-red">
+                📧 Email Me
+            </a>
+
+            <a href="tel:9126616162" class="btn btn-red">
+                📞 Call Me
+            </a>
+
+            <a href="sms:9126616162" class="btn btn-red">
+                💬 Text Me
+            </a>
+
+        </div>
+
+    </div>
+
+</section>
+
+<!-- ABOUT -->
+
+<section class="section about">
+
+    <div class="container">
+
+        <div class="about-grid">
+
+            <img src="semperficarguy.jpg" alt="SemperFiCarGuy">
+
+            <div class="about-text">
+
+                <h3>Meet The SemperFiCarGuy</h3>
+
+                <p>
+                    As a Marine Corps veteran and former recruiter in the
+                    Hinesville and Fort Stewart area, I've dedicated my
+                    career to serving the military community.
+                </p>
+
+                <p>
+                    Today, I bring that same commitment to helping service
+                    members, veterans, and their families find the right
+                    vehicle without pressure, games, or surprises.
+                </p>
+
+                <p>
+                    Whether you're buying your first vehicle, upgrading for
+                    your growing family, or looking for a dependable truck,
+                    my mission remains the same:
+                </p>
+
+                <ul class="values">
+                    <li>✓ Honest Information</li>
+                    <li>✓ Transparent Pricing</li>
+                    <li>✓ Devil Dog Deals</li>
+                </ul>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+<!-- RESOURCES -->
+
+<section class="section links">
+
+    <div class="container">
+
+        <h2 class="section-title">
+            Helpful Resources
+        </h2>
+
+        <div class="button-grid">
+
+            <a
+            href="https://www.jclewishinesville.com/inventory"
+            target="_blank"
+            class="btn btn-blue">
+
+                🚘 Browse Inventory
+
+            </a>
+
+            <a
+            href="https://www.ford.com/support/category/service-maintenance/roadside-assistance/?gnav=header-support-vehicleSupport"
+            target="_blank"
+            class="btn btn-blue">
+
+                🛠 Ford Roadside Assistance
+
+            </a>
+
+        </div>
+
+    </div>
+
+</section>
+
+<!-- REFERRAL -->
+
+<section class="section referral">
+
+    <div class="container">
+
+        <h2>Refer A Friend</h2>
+
+        <p>
+            Know someone looking for a vehicle? Send them my way.
+        </p>
+	
+	<p style="margin-top:10px;font-size:1rem;opacity:.9;">
+    💵 If they purchase a vehicle through me, you'll receive a
+    <strong>$100 referral bonus.</strong> Be sure to complete the referral message so I know who sent them.
+</p>
+
+        <a
+        href="sms:9126616162?body=Hi%20Stephen,%20I'd%20like%20to%20refer%20a%20friend.%0A%0AFriend's%20Name:%0AFriend's%20Phone%20Number:%0A%0AMy%20Name:"
+        class="btn btn-green"
+        style="max-width:320px;margin:auto;">
+
+            🎁 Refer A Friend
+
+        </a>
+
+    </div>
+
+</section>
+
+<!-- FOOTER -->
+
+<footer class="footer">
+
+    <h3>Stephen MacIver</h3>
+
+    <p>Ford Sales Consultant</p>
+
+    <br>
+
+    <p>
+        📞 <a href="tel:9126616162">912-661-6162</a>
+        &nbsp; | &nbsp;
+        📧 <a href="mailto:smaciver@jclewis.com">smaciver@jclewis.com</a>
+    </p>
+
+</footer>
+
+</body>
+</html>
